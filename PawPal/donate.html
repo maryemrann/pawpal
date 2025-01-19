@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPal - Donate </title>
+</head>
+<style>
+    /* General Body Styling */
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #C1D9F4; /* Lighter soft pastel blue background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #3A4C6B; /* Lighter darker blue for header */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    color: #C1D9F4; /* Light sky blue for header text */
+}
+
+/* Donation Form Styling */
+.donation-form {
+    background-color: #c8def7; /* Lighter light sky blue for form */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: #3A4C6B; /* Deep slate blue for form title */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #3A4C6B; /* Deep slate blue for labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3A4C6B; /* Lighter darker blue for button */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #3A4C6B; /* Deep slate blue for button hover */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #3A4C6B; /* Lighter darker blue for footer */
+    color: #BCE0FD; /* Light sky blue for footer text */
+}
+
+
+
+</style>
+
+<body>
+    <header>
+        <h1>PawPal - Donate</h1>
+    </header>
+    <main>
+        <section class="donation-form">
+            <h2>Donate to Change Lives</h2>
+            <p>Whether you are offering a loving home to an animal or contributing funds to support their care, every action makes a difference.</p>
+            <form action="#" method="POST">
+                 <!-- Name -->
+                <label for="name"> Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+
+                  <!-- Email -->
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                
+                <!-- Phone number -->
+                <label for="Phonenumber" class="form-label">Phone Number:</label>
+                <input type="text" class="form-control" id="phonenumber" placeholder="Enter your phone number">
+               
+                <!-- Donation tYPE-->
+                <label for="donation-type">I want to:</label>
+                <select id="donation-type" name="donation-type" required>
+                    <option value="donate-money">Donate Money</option>
+                    <option value="donate">Donate An Animal</option>
+                </select>
+
+                <!-- Money Donatiom-->
+                <div id="money-donation" class="donation-option">
+                    <label for="amount">Donation Amount ($):</label>
+                    <input type="number" id="amount" name="amount" min="1">
+                    <label for="message">Message (optional):</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+
+                 <!-- Animal DOnation-->
+                <div id="animal-adoption" class="donation-option" style="display: none;">
+                    <label for="petname" class="form-label">Pet Name:</label>
+                    <input type="text" class="form-control" id="petname" placeholder="Enter pet name">
+
+                     <!-- Pet Species -->
+                    <label for="petspecies">Select Pet Species:</label>
+                    <select id="petspecies" name="petspecies" >
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="rabbit">Rabbit</option>
+                        <option value="bird">Bird</option>
+                        <option value="aquaticanimal">Aquatic animal</option>
+                        <option value="other">Other</option>
+                    </select>
+                  
+                    <!-- Pet Age -->
+                    <label for="petage" class="form-label">Pet Age:</label>
+                    <input type="number" class="form-control" id="petage" placeholder="Enter Pet age">
+                    <label for="healthdetails">Health Details:</label>
+                    <textarea id="healthdetails" name="message" rows="4"></textarea>
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 PawPal. All rights reserved.</p>
+        <h1><strong>Join the PawPal family</strong></h1>
+        <p>Together, we can bring hope to helpless paws. Your contribution can save lives.</p>
+    </footer>
+
+    <script>
+        const donationTypeSelect = document.getElementById('donation-type');
+        const moneyDonationDiv = document.getElementById('money-donation');
+        const animalAdoptionDiv = document.getElementById('animal-adoption');
+
+        donationTypeSelect.addEventListener('change', function() {
+            if (this.value === 'donate-money') {
+                moneyDonationDiv.style.display = 'block';
+                animalAdoptionDiv.style.display = 'none';
+            } else {
+                moneyDonationDiv.style.display = 'none';
+                animalAdoptionDiv.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>

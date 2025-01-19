@@ -1,0 +1,233 @@
+.header {
+    background-color: #007bff; /* Bootstrap primary blue */
+    height: 5cm; /* Set the header height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Stack the image and slogan */
+    padding: 0;
+    margin: 0;
+}
+
+.shifted-down {
+    margin-top: 80px; /* Slightly shift the content downward */
+}
+
+.header-logo {
+    max-height: 600px; /* Keep the larger logo size */
+    max-width: 380px; /* Maintain proportional scaling */
+}
+
+.header-slogan {
+    font-size: 2.6rem; /* Keep the slogan size proportional to the logo */
+    color: white;
+    margin: 0;
+}
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e1f1ff; /* Lighter soft pastel blue background */
+    color: #3A4C6B; /* Deep slate blue for text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styling */
+.header-strip {
+    background-color: #A1C6EA; /* Light blue for header strip */
+    height: 5%;
+    width: 100%;      
+}
+
+.header, .hero-section {
+    background-color: #C1D9F4; /* Same light blue for both header and hero section */
+    text-align: center;
+    padding: 5px 0;
+}
+
+.header-title, .hero-title {
+    font-size: 2.5rem;
+    color: #3A4C6B; /* blue for header text */
+    font-weight: bold;
+    margin: 0;
+}
+
+.header-slogan, .hero-slogan {
+    font-size: 1.2rem;
+    color: #3A4C6B; /* White for slogan text */
+    margin-top: 10px;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #3A556D; /* Darker shade of the original color */
+    padding: 10px 0;
+}
+
+.navbar .nav-link {
+    color: #BCE0FD; /* Light sky blue for navigation links */
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    background-color: #2F3F4F; /* Even darker shade for hover */
+    border-radius: 5px;
+    color: #BCE0FD; /* Light sky blue text on hover */
+}
+
+
+/* Button Styling */
+button {
+    background-color: #4A6D82; /* Lighter darker blue for button */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #3A4C6B; /* Deep slate blue for button hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #3A4C6B; /* Deep slate blue for footer */
+    color: #BCE0FD; /* Light sky blue for footer text */
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #BCE0FD; /* Light sky blue for links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #A1C6EA; /* Light blue for hover links */
+}
+
+/* About Us */
+.aboutus {
+    background-color: #C1D9F4; /* Lighter sky blue for about section */
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutus h1 {
+    color: #3A4C6B; /* Deep slate blue for headings */
+}
+
+.aboutus p {
+    color: #3A4C6B; /* Deep slate blue for paragraph text */
+}
+
+/* Success Stories Section */
+#success {
+    background-color: #E8F6FF; /* Very light blue background */
+    padding: 50px 20px;
+    text-align: center;
+    border-top: 2px solid #A1C6EA; /* Light blue border at the top */
+}
+
+#success h2 {
+    color: #3A4C6B; /* Deep slate blue for heading */
+    font-size: 2rem;
+}
+
+#success p {
+    color: #3A4C6B; /* Deep slate blue for description text */
+    margin-bottom: 20px;
+}
+
+#success ul {
+    list-style-type: none;
+    padding: 0;
+    color: #3A4C6B; /* Deep slate blue for success stories */
+}
+
+#success li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #C1D9F4; /* Lighter sky blue for each story */
+    border-radius: 8px;
+}
+
+/* Testimonials Section */
+#testimonials {
+    background-color: #E8F6FF; /* Very light blue background */
+    padding: 50px 20px;
+    text-align: center;
+    border-top: 2px solid #A1C6EA; /* Light blue border at the top */
+}
+
+#testimonials h2 {
+    color: #3A4C6B; /* Deep slate blue for heading */
+    font-size: 2rem;
+}
+
+blockquote {
+    border-left: 5px solid #A1C6EA; /* Light blue border for quotes */
+    background-color: #C1D9F4; /* Lighter sky blue for quote boxes */
+    padding: 15px 20px;
+    margin: 20px auto;
+    color: #3A4C6B; /* Deep slate blue for quote text */
+    font-style: italic;
+    border-radius: 8px;
+    max-width: 600px;
+}
+
+/* Gallery Section */
+#gallery {
+    background-color: #E8F6FF; /* Very light blue background */
+    padding: 50px 20px;
+    text-align: center;
+    border-top: 2px solid #A1C6EA; /* Light blue border at the top */
+}
+
+#gallery h2 {
+    color: #3A4C6B; /* Deep slate blue for heading */
+    font-size: 2rem;
+}
+
+#gallery p {
+    color: #3A4C6B; /* Deep slate blue for description text */
+    margin-bottom: 30px;
+}
+
+.gallery-item img {
+    border: 2px solid #C1D9F4; /* Lighter sky blue border around images */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item p {
+    color: #3A4C6B; /* Deep slate blue for captions */
+    font-size: 14px;
+}
+
+
+  
+    
+  
+  
+
+
+
+
